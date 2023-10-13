@@ -53,11 +53,20 @@ input{
     background-color:#223132;
     color:white;
 }
-.numbers,.operators{
-    display:flex;
+.numbers{
+    display:grid;
     flex:0.5;
     border:2px solid red;
-    flex-wrap: wrap;
+    grid-template-areas: 
+    'one two three'
+    'four five six'
+    'seven eight nine'
+    ;
+    
+}
+
+.operators{
+    display: grid;
     
 }
 .numbers>p,.operators>p{
