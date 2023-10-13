@@ -11,6 +11,8 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    /* border:2px solid red; */
+
 }
 
 header,main{
@@ -19,10 +21,25 @@ header,main{
 body{
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    
 }
 
+
+#new-input-form{
+      width:50%;
+      background-color:#010134;
+      color:white;
+      display:flex;
+      flex-direction:column
+      
+}
+input{
+    width:10rem;
+    height:5rem;
+}
 .output-display{
-    border:var(--gray);
+    /* border:var(--gray); */
     width: 10rem;
     height:5rem;
     background-color: gray;
@@ -49,3 +66,5 @@ body{
     height:2rem;
     width:2rem;
 }
+
+

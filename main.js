@@ -28,7 +28,7 @@ window.addEventListener('load',()=>{
          numberInput.value=" "
          const inputValue=document.createElement("p")
         inputValue.innerText=numberInput.value;
-        
+
         //  let outputArray=[]
         //  outputArray.push(numberInput.value)
 
@@ -36,7 +36,7 @@ window.addEventListener('load',()=>{
          
         
     })
-
+    
     
 
 
