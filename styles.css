@@ -67,4 +67,7 @@ form .display-screen input{
 #ac,#delete{
     background-color: red;
 }
+.operator{
+    background-color: green;
+}
 
