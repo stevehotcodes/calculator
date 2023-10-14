@@ -24,11 +24,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+   
+}
+#screen{
+    font-size: 1.5rem;
 }
 
 .calculator{
-    padding:1.2rem;
+    padding:1.0rem;
     background-color: #010134;
 }
 .calculator form input{
@@ -42,14 +45,15 @@ body{
     font-size:2rem;
     color:#fff;
     cursor:pointer;
-    margin: 10px;
+    margin: 9px;
 }
 
 form .display-screen{
     display: flex;
     justify-content: flex-end;
     margin:20px 0;
-    flex:1
+    flex:1;
+    
 }
 
 form .display-screen input{
@@ -58,6 +62,13 @@ form .display-screen input{
     font-size:4rem;
     box-shadow: none;
     border: 2px solid white;
+    background-color: #e3f9ff;
+    color:black;
+    height:10rem;
+}
+
+.operator{
+    background-color: green;
 }
 
 #equal{
@@ -67,7 +78,5 @@ form .display-screen input{
 #ac,#delete{
     background-color: red;
 }
-.operator{
-    background-color: green;
-}
+
 
