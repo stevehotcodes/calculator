@@ -10,83 +10,61 @@
 *{
     padding:0;
     margin:0;
-    box-sizing:border-box;
-    /* border:2px solid red; */
-
+    box-sizing:border-box
 }
 
-header,main{
-    margin: 1rem auto;
-}
 body{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    
-}
-header{
-    padding:2px
+    background-color:var(--purple)
 }
 
-#new-input-form{
-      width:50%;
-      background-color:#010134;
-      color:white;
-      display:flex;
-      flex-direction:column
-      
+.calculator-wrapper{
+    width:100%;
+    height:100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
 }
-input{
-    width:30rem;
+
+.calculator{
+    padding:1.2rem;
+    background-color: #010134;
+}
+.calculator form input{
+    border:0;
+    outline:0;
+    width:5rem;
     height:5rem;
-}
-.output-display{
-    /* border:var(--gray); */
-    width: 10rem;
-    height:5rem;
-    background-color: gray;
-}
-
-.numbers-operators-section{
-    display:flex;
-
-    justify-content:center;
-    width:30rem;
-    height:50vh;
-    background-color:#223132;
-    color:white;
-}
-.numbers{
-    display:grid;
-    flex:0.5;
-
-    border:2px solid red;
-    grid-template-areas: 
-    'one two three'
-    'four five six'
-    'seven eight nine'
-    
-    ;
-    
+    border-radius:10px;
+    box-shadow:-8px 8px 15px #fff,5px 5px 15px #000;
+    background: transparent;
+    font-size:2rem;
+    color:#fff;
+    cursor:pointer;
+    margin: 10px;
 }
 
-.operators{
-    display: grid;
-    flex:0.5;
-    grid-template-areas: 
-    'plus minus'
-    'minus'
-    'multiply'
-    'divide';
-    
-}
-.numbers>p,.operators>p{
-    border:2px solid white;
-    font-size:3rem;
-    font-weight:700;
-    /* padding:2px;
-    height:2rem;
-    width:2rem; */
+form .display-screen{
+    display: flex;
+    justify-content: flex-end;
+    margin:20px 0;
+    flex:1
 }
 
+form .display-screen input{
+    flex:1;
+    text-align:right;
+    font-size:4rem;
+    box-shadow: none;
+    border: 2px solid white;
+}
+
+#equal{
+    width:12rem;
+    background-color: red;
+}
+#ac,#delete{
+    background-color: red;
+}
 

@@ -7,38 +7,46 @@
     <title>Calculator</title>
 </head>
 <body>
-    <header>
-         <form id="new-input-form">
-            <input type="text" class="number-input" placeholder="please enter number"><button type="button"  class="enter">enter</button>
-            
-            <!-- <div  class="output-display" placeholder="Results">
+    <div class="calculator-wrapper">
+        <div class="calculator">
+            <form >
+                <div class="display-screen">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" id="ac" onclick="display.value += ''">
+                    <input type="button" value="DE" id="delete" onclick="display.value=display.value.toString().slice(0,-1)">
+                    <input type="button" value="." onclick="display.value += '.'">
+                    <input type="button" value="/" onclick="display.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="*" onclick="display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4"onclick="display.value += '4'">
+                    <input type="button" value="5"onclick="display.value += '5'">
+                    <input type="button" value="6"onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1"  onclick="display.value += '1'">
+                    <input type="button" value="2"  onclick="display.value += '2'">
+                    <input type="button" value="3"  onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'">
+                </div>
 
-            </div> -->
-           <div class="results" style="display: flex; background-color:gray; width:20rem; height:5rem;"><p id="results-display"></p></div>
-         </form>
-    </header>
-    <main class="numbers-operators-section"> 
-        <div class="numbers">
-            <p class="number">1</p>
-            <p class="number">2</p>
-            <p class="number">3</p>
-            <p class="number">4</p>
-            <p class="number">5</p>
-            <p class="number">6</p>
-            <p class="number">7</p>
-            <p class="number">8</p>
-            <p class="number">9</p>
-            <p class="number">0</p>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="=" id="equal">
+                    
+                </div>
+            </form>
         </div>
-        <div class="operators">
-            <p class="operator">+</p>
-            <p class="number">-</p>
-            <p class="number">*</p>
-            <p class="number">/</p>
-            <p class="number">=</p>
-        </div>
-    </main>
-    
+    </div>
 </body>
 <script src="./main.js"></script>
 </html>
