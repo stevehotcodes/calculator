@@ -8,7 +8,7 @@ const equals=document.querySelector("#equal");
 const number_btns=document.querySelectorAll(".number-btn");
 const operators=document.querySelectorAll(".operators")
 
-// console.log(ac,del,display,del,equal,number_btn);
+
 //number buttons functionality
 number_btns.forEach(button=>{
     button.addEventListener('click',(e)=>{
@@ -23,7 +23,6 @@ number_btns.forEach(button=>{
 equals.addEventListener('click',(e)=>{
     e.preventDefault();
     
-
     try {
         display.value= eval(display.value)
     } catch (error) {
@@ -33,7 +32,6 @@ equals.addEventListener('click',(e)=>{
         // display.value=" "
         location.reload()
     }
-   
     
     
 })
@@ -62,7 +60,6 @@ operators.forEach(operator=>{
         display.value +=operator.value
     })
 })
-
 
 
 
