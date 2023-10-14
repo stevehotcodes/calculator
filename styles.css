@@ -13,9 +13,7 @@
     box-sizing:border-box
 }
 
-body{
-    background-color:var(--purple)
-}
+
 
 .calculator-wrapper{
     width:100%;
