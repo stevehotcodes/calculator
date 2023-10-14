@@ -4,7 +4,7 @@ calculator challenge
 The project was done using  HTML5 , CSS3, and JavaScript .
 The web ap is visible in  mobile, tablet and desktop screens.
 
-To view the full implementation of the site click on this link [CALCULATOR](https://https://hotcodes-calculator.netlify.app/")
+To view the full implementation of the site click on this link [CALCULATOR](https://https://hotcodes-calculator.netlify.app/)
 The website is also visible or responsive for mobile screen with a maximum width of 327px
 ## DESKTOP VIEW
 
